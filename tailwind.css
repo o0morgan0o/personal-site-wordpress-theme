@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.project-link {
+    @apply text-white font-[bebas-neue-semirounded] bg-black px-4 py-2 mr-2 mb-2 text-2xl
+    2xl:text-[50px] 2xl:py-4 2xl:px-6 2xl:mr-4;
+}
+
+.tag-link {
+    @apply bg-blue-200 font-[roboto] text-[14px] mr-2 px-4 py-2 rounded-full;
+}
+
+.article-card {
+    @apply mt-8 max-w-[1000px] mx-auto ;
+}
+
+.article-card > div {
+    @apply bg-gray-200;
+}
+
+.article-card__number {
+    @apply font-[roboto] font-light text-6xl border-b-4 border-black pb-4;
+}
+
+.article-card__title {
+    @apply font-[bebas-neue-semirounded] text-4xl border-b-4 border-black py-4;
+}
+
+.article-card__tag-container {
+    @apply flex flex-row flex-wrap my-2 border-b-2 border-black pb-2;
+}
+
+.article-card__tag-link {
+    @apply bg-blue-200 rounded-full px-4 py-2 mr-2 text-[12px];
+}
+
+.article-card__card-description {
+    @apply mt-4 pb-4 border-b-4 border-black;
+}
+
+.article-card__footer {
+    @apply italic mt-2 text-gray-400 text-[14px];
+}
+
+.social-link {
+    @apply text-4xl mx-6;
+}

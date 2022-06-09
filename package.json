@@ -1,0 +1,19 @@
+{
+  "name": "customtheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all -p tailwind livereload",
+    "tailwind": "npx tailwindcss -i ./tailwind.css -o ./dist/style.css --watch",
+    "livereload": "livereload -d ./"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "livereload": "^0.9.3",
+    "tailwindcss": "^3.0.24"
+  }
+}
