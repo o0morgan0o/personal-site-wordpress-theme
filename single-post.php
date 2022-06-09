@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
 <?php
-
 the_post();
 $categories = get_the_category();
 ?>
@@ -40,8 +39,8 @@ $categories = get_the_category();
                 md:border-none
 ">
                     <?php foreach ($categories as $category) { ?>
-                        <a href="<?php echo get_category_link($category);?>">
-                            <div class="article-card__tag-link"><?php echo $category->name; ?></div>
+                        <a href="<?php echo get_category_link($category); ?>">
+                            <div class="article-card__tag-link tag-link category-<?php echo $category->slug;?>"><?php echo $category->name; ?></div>
                         </a>
                     <?php } ?>
 
@@ -51,13 +50,15 @@ $categories = get_the_category();
         <div class="px-8 py-14
         md:border-t border-black
 ">
-            <?php the_content(); ?>
+            <div class="article__content">
+                <?php the_content(); ?>
+            </div>
         </div>
 
         <div class="bg-gray-200">
-            <div class="mx-6 mt-8 pl-4 pt-2 pb-4 italic border-t-2 border-black capitalize"><?php echo get_the_author(); ?></div>
+            <div class="mx-6 mt-8 pl-4 pt-2 pb-4 italic border-t-2 border-black capitalize">Written by <?php echo ucfirst(get_the_author()); ?>.</div>
         </div>
-        <?php  get_template_part('template-parts/backbutton');?>
+        <?php get_template_part('template-parts/backbutton'); ?>
     </div>
 </div>
 

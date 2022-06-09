@@ -1,7 +1,7 @@
 <div class="flex justify-between">
     <div class="mx-6 my-3 row-start-1 my-auto">
         <a href="<?php echo get_site_url(); ?>">
-            <div class="font-[bebas-neue-semirounded] text-4xl">
+            <div class="morgan-thibert font-[bebas-neue-semirounded] text-4xl">
                 Morgan Thibert @ 2022
             </div>
         </a>

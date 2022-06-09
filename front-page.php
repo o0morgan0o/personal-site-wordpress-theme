@@ -19,16 +19,17 @@ if ($all_posts->have_posts()) {
     xl:grid-cols-[1fr,2fr]
     2xl:grid-cols-[auto,1fr,auto]
 ">
-        <div class="mx-6 my-4 row-start-1 my-auto">
-            <a href="<?php echo get_site_url(); ?>">
+        <div class="mx-6 my-4 row-start-1 my-auto flex flex-col justify-center">
+            <a class="" href="<?php echo get_site_url(); ?>">
 
-                <div class="font-[bebas-neue-semirounded] text-4xl
+                <div class="morgan-thibert font-[bebas-neue-semirounded] text-4xl
             2xl:text-5xl
-            ">Morgan Thibert @ 2022
+            ">
+                    Morgan Thibert @ 2022
                 </div>
             </a>
         </div>
-        <div class="mt-4 row-start-2 mx-6
+        <div class="mt-4 row-start-2 my-3
                 xl:row-start-1 xl:col-start-2">
             Lorem ipsum dolor sit amet. In quisquam nisi et quibusdam saepe sit fugiat doloribus At nisi distinctio!
             Sit voluptas omnis ex nostrum soluta ut voluptates aperiam. Et sunt sunt et autem aliquid et corporis
@@ -77,8 +78,7 @@ if ($all_posts->have_posts()) {
                 </div>
             </div>
             <div class="font text-4xl font-[bebas-neue-semirounded] uppercase mt-8
-            2xl:hidden
-">
+            2xl:hidden">
                 Blog and technical reviews
             </div>
         </div>
