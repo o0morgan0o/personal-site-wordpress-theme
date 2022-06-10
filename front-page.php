@@ -54,7 +54,7 @@ if ($all_posts->have_posts()) {
             md:text-[100px]
             xl:text-[140px]
             2xl:text-[210px] 2xl:text-left
-            ">Selected Works</h1>
+            ">Selected Work</h1>
 
             <div id="link-container">
                 <div class="flex flex-row flex-wrap">
